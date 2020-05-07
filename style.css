@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.font_roboto{
+  font-family: 'Roboto Mono', monospace;
+  background-color: silver;
+}
+.font_pacifico{
+  font-family: 'Pacifico', cursive;
+}
