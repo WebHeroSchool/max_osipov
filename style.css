@@ -1,4 +1,47 @@
-.body {
-  padding: 20px;
-  background-color: silver;
+@media (min-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+
+  a {
+    display: none;
+  }
+
+  .menu {
+    width: 20px;
+    height: 4px;
+    background-color: blue;
+    margin: 3px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  a {
+    display: none;
+  }
+
+  .menu {
+    width: 20px;
+    height: 4px;
+    background-color: blue;
+    margin: 3px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+
+  a {
+    display: inline-block;
+  }
+
+  .menu {
+    display: none;
+  }
 }
