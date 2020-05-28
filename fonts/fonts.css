@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Montserrat';
   src:
-    url('montserrat-regular-webfont.woff2') format('woff2'),
-    url('montserrat-regular-webfont.woff') format('woff');
+    url('montserrat-600-normal.woff2') format('woff2'),
+    url('montserrat-600-normal.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

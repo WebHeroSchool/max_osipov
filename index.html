@@ -2,51 +2,82 @@
 <html lang="ru">
 <head>
  <meta charset="utf-8">
- <link rel="stylesheet" href="../fonts/fonts.css">
+ <link rel="stylesheet" href="fonts/fonts.css">
  <link rel="stylesheet" href="styles.css">
  <title>Tesla</title>
 </head>
 <body class="body">
 	<header class="header">
     <div class="header__logo">
-      <img src="" alt="" class="header__logo-img">
+      <img src="img/Tesla-Wordmark-Red.png" alt="" class="header__logo-img">
     </div>
     <nav class="header__nav">
-      <a href="#" class="header__nav-text">Model S</a>
-      <a href="#" class="header__nav-text">Model X</a>
-      <a href="#" class="header__nav-text">Model 3</a>
-      <a href="#" class="header__nav-text">Roadster</a>
-      <a href="#" class="header__nav-text">Energy</a>
-      <a href="#" class="header__nav-text">Магазин</a>
-      <a href="#" class="header__nav-text">Войти</a>
+      <div class="header__nav-modelS">
+        <a href="#" class="header__nav-link">Model S</a>
+      </div>
+      <div class="header__nav-modelX">
+        <a href="#" class="header__nav-link">Model X</a>
+      </div>
+      <div class="header__nav-model3">
+        <a href="#" class="header__nav-link">Model 3</a>
+      </div>
+      <div class="header__nav-roadster">
+        <a href="#" class="header__nav-link">Roadster</a>
+      </div>
+      <div class="header__nav-rnergy">
+        <a href="#" class="header__nav-link">Energy</a>
+      </div>
     </nav>
-    <div class="header__burger">
-
+    <div class="header__menu">
+      <div class="header__menu-score">
+        <a href="#" class="header__nav-link">Магазин</a>
+      </div>
+      <div class="header__menu-input">
+        <a href="#" class="header__nav-link">Войти</a>
+      </div>
+      <img src="img/menu.svg" alt="">
     </div>
   </header>
   <main class="main">
-    <h1 class="main__h1">Model S</h1>
-    <span class="main__span">
-      Добро пожаловать в будущее!
-    </span>
-    <div class="main__div-tesla">
-      <img src="" alt="" class="main__img-tesla">
+    <img class="main__img-background" src="img/Tesla-Wordmark-Red.png" alt="">
+    <div class="main__title">
+      <h1 class="main__h1">Model S</h1>
+      <span class="main__span">
+        Добро пожаловать в будущее!
+      </span>
+      <img class="main__img-tesla" src="img/tesla.png" alt="" >
     </div>
-    <div class="main__div">
-      <div class="main__div-speed">
-        <img src="" alt="" class="main__img-speed">
-        <p class="main__text-big">2,7 сек</p>
-        <p class="main__text-small">0-100км/час</p>
-      </div>
-      <div class="main__div-road">
-        <img src="" alt="" class="main__img-road">
-        <p class="main__text-big">632км
-        <p class="main__text-small">запас хода</p>
+    <div class="main__wrapper">
+      <div class="main__wrapper-wrap">
+        <div class="main__div-iner">
+          <!-- <img class="main__img-speed" src="img/speed.png" alt=""> -->
+          <div class="main__div-text">
+            <img class="main__img-speed" src="img/speed.png" alt="">
+            <p class="main__text-big">2,7</p>
+            <p class="main__text-norm">сек</p>
+            <p class="main__text-small">0-100 км/час</p>
+          </div>
+        </div>
+        <div class="main__div-iner">
+          <div class="main__div-text">
+            <img class="main__img-road" src="img/road.png" alt="">
+            <p class="main__text-big">632
+            <p class="main__text-norm">км</p>
+            <p class="main__text-small">запас хода</p>
+          </div>
+        </div>
       </div>
       <div class="main__div-testdrive">
-        <img src="" alt="" class="main__img-testdrive">
-        <a href="#" class="main__link">Тест драйв</a>
+        <div class="testdrive__wrapper">
+          <img src="img/steering.svg" alt="" class="main__img-testdrive">
+          <a href="#" class="main__link">Тест драйв</a>
+        </div>
         <a href="#" class="main__button">Заказать</a>
+      </div>
+    </div>
+    <div class="main__vector">
+      <div class="vector down">
+      </div>
     </div>
   </main>
 

@@ -1,3 +1,270 @@
-body {
-  font-family: 'Montserrat', Arial, sans-serif;
+/* Задаем основные параметры страници */
+.body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #E5E5E5;
+  max-width: 1440px;
+}
+
+/* box-sizing позволяет задавать свойства
+width и height для блока, а не его содержимого, */
+* {
+  box-sizing: border-box;
+}
+
+/* Основные пораметры для header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 60px 58px 42.72px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+}
+.header__logo {
+  width: 166px;
+  height: 51px;
+  padding-right: 203px;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Подгоняем элементы блока nav по размерам из проекта */
+.header__nav-modelS {
+  padding-right: 63.14px;
+}
+.header__nav-modelX {
+  padding-right: 24.86px;
+}
+.header__nav-model3 {
+  padding-right: 44px;
+}
+.header__nav-roadster {
+  padding-right: 46px;
+}
+.header__nav-link {
+  text-decoration: none;
+  color: #000;
+  padding-bottom: 6px;
+  background: none;
+}
+
+/* меняем поведение ссылки при наведении */
+.header__nav-link:hover {
+  color: #E51937;
+  background-image: url(img/vector.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  transition: color .1s;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Подгоняем элементы меню по размерам из проекта */
+.header__menu-score {
+  padding-right: 30px;
+}
+.header__menu-input {
+  padding-right: 30px;
+}
+
+
+.main {
+  position: relative;
+}
+
+/* Задаем расположение background по проекту */
+.main__img-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 1514px;
+  height: 467px;
+  opacity: 0.1;
+  transform: translateX(-74px);
+}
+
+/* Задаем размеры и расположение заголовка */
+.main__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 28px;
+}
+ .main__h1 {
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 90px;
+}
+.main__span {
+  margin: 0 auto;
+  padding-bottom: 26px;
+  font-weight: 500;
+  font-size: 14.7px;
+  line-height: 0em;
+}
+
+/* Задаем расположение изображения в main */
+.main__img-tesla {
+  margin-top: 9px;
+  margin-right: 74px;
+  width: 968px;
+  height: 450px;
+  z-index: 2;
+}
+
+/* Создаем блок для размещения элементов под изображением */
+.main__wrapper {
+  display: flex;
+  font-family: Montserrat;
+}
+
+/* Блока с параметрами */
+.main__wrapper-wrap {
+  margin-left: 317px;
+  display: flex;
+  justify-content: start;
+  width: 375px;
+  height: 58px;
+
+}
+.main__div-iner {
+  margin-right: 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Блок  Grid*/
+.main__div-text {
+  display: grid;
+}
+
+/* Помещаем картинку в Grid*/
+.main__img-speed {
+  margin: 0 auto;
+  width: 54px;
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-self: center;
+  margin-right: 9px;
+  margin-top: 5px;
+}
+
+/* Помещаем большой текст в Grid */
+.main__text-big {
+  margin: 0;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 37px;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+  padding-bottom: 2px;
+}
+
+/* Помещаем средний текст в Grid */
+.main__text-norm {
+  margin: 0;
+  padding-left: 6px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5em;
+  grid-column: 3;
+  grid-row: 1;
+  align-self: end;
+}
+
+/* Помещаем маленький текст в Grid */
+.main__text-small {
+  margin: 0;
+  font-size: 12px;
+  flex-direction: row;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+/* Помещаем картинку в Grid */
+.main__img-road {
+  margin: 0 auto;
+  height: 58px;
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-self: center;
+  margin-right: 8px;
+  margin-top: 11px;
+}
+
+/* Задаем переметры для ссылки тестдрайв */
+.main__div-testdrive {
+  margin-left: 108px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testdrive__wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
+}
+.main__link {
+  padding-left: 7px;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+}
+.main__link:hover {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0,.4);
+}
+
+/* Параметры кнопки */
+.main__button {
+  margin-left: 40px;
+  width: 160px;
+  font-size: 13px;
+  line-height: 36px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #E51937;
+  background: transparent;
+  border: 2px solid #E51937;
+  text-align: center;
+  transition-duration: 0.4s;
+}
+.main__button:hover {
+  background: #E51937;
+  color: #000;
+}
+
+/* блок со стрелкой вниз */
+.main__vector {
+  display: flex;
+  justify-content: center;
+  margin-top: 23.5px;
+}
+
+/* Стрелка вниз */
+.vector {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  border-color: #E51937;
+  display: inline-block;
+  padding: 10px;;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
