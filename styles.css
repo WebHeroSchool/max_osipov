@@ -186,6 +186,9 @@ width и height для блока, а не его содержимого, */
 }
 
 /* Помещаем картинку в Grid */
+.main__img-road_ipad {
+  display: none;
+}
 .main__img-road_dasktop {
   margin: 13px 6px 0px 76px;
   width: 42px;
