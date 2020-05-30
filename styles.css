@@ -265,12 +265,14 @@ width и height для блока, а не его содержимого, */
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
 @media (max-width: 375px) {
   .body {
     margin: 0;
-    background: #red;
+    background: red;
     max-width: 375px;
 }
+
 @media (max-width: 768px) {
   .body {
     margin: 0;
@@ -356,4 +358,5 @@ width и height для блока, а не его содержимого, */
   }
   .main__vector {
     margin-top: 52px;
+  }
 }
