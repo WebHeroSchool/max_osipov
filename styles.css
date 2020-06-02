@@ -31,14 +31,16 @@ width и height для блока, а не его содержимого, */
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  width: 40%
+  width: 40%;
 }
+
 .header__nav-link {
   display: block;
   text-decoration: none;
   color: #000;
   line-height: 32px;
 }
+
 /* меняем поведение ссылки при наведении */
 .header__nav-link:hover {
   color: #e51937;
@@ -46,16 +48,18 @@ width и height для блока, а не его содержимого, */
   border-radius: 2px;
   transition: color .2s;
 }
+
 .header__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 204px;
 }
+
 .header__menu-burger {
-   fill: #e51937;
-   width: 24px;
-   height: 15px;
+  fill: #e51937;
+  width: 24px;
+  height: 15px;
 }
 .header__menu-burger:hover{
   cursor: pointer;
@@ -79,6 +83,7 @@ width и height для блока, а не его содержимого, */
   flex-direction: column;
   align-items: center;
 }
+
  .main__h1 {
   margin: 0 auto;
   font-size: 90px;
@@ -108,14 +113,14 @@ width и height для блока, а не его содержимого, */
   width: 59%;
 }
 
-/* Блока с параметрами */
+/* Блок с параметрами */
 .main__inner {
   display: flex;
   justify-content: space-around;
   width: 50%;
 }
 
-/* Блок  Grid*/
+/* Блок  Grid */
 .main__inner-speed {
   display: grid;
 }
@@ -176,14 +181,14 @@ width и height для блока, а не его содержимого, */
   grid-row: 1/3;
 }
 
-
 /* Задаем переметры для ссылки тестдрайв */
 .main__div-testdrive {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 43%
+  width: 43%;
 }
+
 .testdrive__wrapper {
   display: flex;
   align-items: center;
@@ -204,8 +209,6 @@ width и height для блока, а не его содержимого, */
   text-align: center;
   text-transform: uppercase;
   color: #000;
-}
-.main__link:hover {
   text-shadow: 0px 4px 4px rgba(0, 0, 0,.4);
 }
 
@@ -216,14 +219,14 @@ width и height для блока, а не его содержимого, */
   line-height: 36px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #E51937;
+  color: #e51937;
   background: transparent;
-  border: 2px solid #E51937;
+  border: 2px solid #e51937;
   text-align: center;
   transition-duration: 0.4s;
 }
 .main__button:hover {
-  background: #E51937;
+  background: #e51937;
   color: #000;
 }
 
@@ -237,9 +240,9 @@ width и height для блока, а не его содержимого, */
 .vector {
   border: solid black;
   border-width: 0 3px 3px 0;
-  border-color: #E51937;
+  border-color: #e51937;
   display: inline-block;
-  padding: 10px;;
+  padding: 10px;
 }
 .down {
   transform: rotate(45deg);
@@ -251,6 +254,7 @@ width и height для блока, а не его содержимого, */
     margin: 0;
     max-width: 768px;
   }
+
   .header {
     margin: 24px 33px 85px 6.32px;
   }
@@ -274,7 +278,7 @@ width и height для блока, а не его содержимого, */
     width: 94%;
   }
   .main__wrap {
-    width: 100%
+    width: 100%;
   }
   .main__inner {
     margin: 0 auto;
@@ -296,10 +300,12 @@ width и height для блока, а не его содержимого, */
     grid-column: 1;
     grid-row: 1/3;
   }
+
   .main__text-big {
     font-size: 50px;
     line-height: 55px;
   }
+
   .main__text-norm {
     font-size: 20px;
     line-height: 49px;
