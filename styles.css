@@ -14,7 +14,7 @@ width и height для блока, а не его содержимого, */
 
 /* Основные пораметры для header */
 .header {
-  margin: 24px 60px 0px 37px;
+  margin: 24px 60px 62px 37px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,7 +68,6 @@ width и height для блока, а не его содержимого, */
 /* Задаем расположение background по проекту */
 .main {
   position: relative;
-  margin-top: 62px;
 }
 .main__img-background {
   position: absolute;
@@ -90,6 +89,7 @@ width и height для блока, а не его содержимого, */
   line-height: 100px;
 }
 .main__span {
+  margin-bottom: 28px;
   font-weight: 500;
   font-size: 14.7px;
   line-height: 14px;
@@ -97,7 +97,6 @@ width и height для блока, а не его содержимого, */
 
 /* Задаем расположение изображения в main */
 .main__img-tesla {
-  margin-top: 28px;
   margin-right: 74px;
   width: 67%;
   z-index: 2;
@@ -105,10 +104,11 @@ width и height для блока, а не его содержимого, */
 
 /* Создаем блок для размещения элементов под изображением */
 .main__wrap {
+  margin: 0 auto;
+  margin-bottom: 19px;
   display: flex;
   flex-wrap: wrap;
   font-family: Montserrat;
-  margin: 0 auto;
   justify-content: space-between;
   width: 59%;
 }
@@ -142,8 +142,7 @@ width и height для блока, а не его содержимого, */
 /* Помещаем большой текст в Grid */
 .main__text-big {
   margin: 0;
-  font-size: 35px;
-  line-height: 35px;
+  font-size: 2rem;
   grid-column: 2;
   grid-row: 1;
   align-self: end;
@@ -192,8 +191,8 @@ width и height для блока, а не его содержимого, */
 .testdrive__wrapper {
   display: flex;
   align-items: center;
-  width: 118px;
-  justify-content: space-between;
+  width: 40%;
+  justify-content: flex-start;
 }
 .main__img-testdrive {
   fill: #000;
@@ -202,9 +201,10 @@ width и height для блока, а не его содержимого, */
 }
 .main__link {
   display: flex;
+  padding-left: 7px;
   align-items: center;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 0.86rem;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
@@ -214,7 +214,7 @@ width и height для блока, а не его содержимого, */
 
 /* Параметры кнопки */
 .main__button {
-  width: 160px;
+  width: 44%;
   font-size: 13px;
   line-height: 36px;
   text-decoration: none;
@@ -233,7 +233,6 @@ width и height для блока, а не его содержимого, */
 /* блок со стрелкой вниз */
 .main__vector {
   text-align: center;
-  margin-top: 19px;
 }
 
 /* Стрелка вниз */
@@ -248,6 +247,21 @@ width и height для блока, а не его содержимого, */
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
+@media (max-width: 1024px) {
+  .body {
+    margin: 0;
+    max-width: 1024px;
+  }
+  .header__nav-link {
+    display: none;
+  }
+  .header__menu {
+    width: 30px;
+  }
+  .main__wrap {
+    width: 90%;
+  }
 
 @media (max-width: 768px) {
   .body {
@@ -282,9 +296,13 @@ width и height для блока, а не его содержимого, */
   }
   .main__inner {
     margin: 0 auto;
-    width: 65%;
-    justify-content: space-between;
+    width: 70%;
+    justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 41px;
+  }
+  .main__inner-road {
+    padding-left: 0;
   }
   .main__img-speed {
     margin-top: 4px;
@@ -313,8 +331,8 @@ width и height для блока, а не его содержимого, */
   }
   .main__div-testdrive {
     margin: 0 auto;
-    margin-top: 41px;
-    width: 61%;
+    width: 70%;
+    flex-wrap: wrap;
   }
   .testdrive__wrapper {
     width: 160px;
@@ -339,6 +357,18 @@ width и height для блока, а не его содержимого, */
   }
   .main__vector {
     margin-top: 52px;
+  }
+}
+@media (max-width: 560px) {
+  .body {
+    margin: 0;
+    max-width: 560px;
+  }
+  .main__h1 {
+    font-size: 75px;
+  }
+  .testdrive__wrapper {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 375px) {
@@ -371,6 +401,7 @@ width и height для блока, а не его содержимого, */
     margin-top: 20px;
   }
   .main__span {
+    margin-bottom: 45px;
     font-size: 10px;
   }
   .main__img-background {
@@ -378,14 +409,14 @@ width и height для блока, а не его содержимого, */
   }
   .main__img-tesla {
     margin: 0;
-    margin-top: 49px;
     width: 100%
   }
-  .main__wrap {
-    margin-top: 25px;
+  .main__title {
+    margin-bottom: 21px;
   }
   .main__inner {
     width: 80%;
+    margin-bottom: 38px;
   }
   .main__img-speed {
     margin-top: 0px;
@@ -397,7 +428,7 @@ width и height для блока, а не его содержимого, */
     padding-left: 0;
   }
   .main__img-road_dasktop {
-    margin: 5px 9px 0px 34px;
+    margin: 5px 9px 0px 0px;
     width: 34px;
     height: 53px;
     grid-column: 1;
@@ -418,8 +449,7 @@ width и height для блока, а не его содержимого, */
     font-size: 10px;
   }
   .main__div-testdrive {
-    margin-top: 38px;
-    width: 100%;
+    width: 85%;
   }
   .main__img-testdrive {
     fill: #e51937;
@@ -432,10 +462,11 @@ width и height для блока, а не его содержимого, */
     color: #e51937;
   }
   .testdrive__wrapper {
-    width: 120px;
+    margin: 0 auto;
+    width: 47%;
   }
   .main__button {
-    width: 160px;
+    width: 52%;
     line-height: 36px;
     font-size: 13px;
     background: #e51937;
@@ -443,5 +474,14 @@ width и height для блока, а не его содержимого, */
   }
   .main__vector {
     margin-top: 22px;
+  }
+}
+@media (max-width: 232px) {
+  .body {
+    margin: 0;
+    max-width: 232px;
+  }
+  .main__wrap {
+    display: none;
   }
 }
