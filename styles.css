@@ -48,7 +48,7 @@ width и height для блока, а не его содержимого, */
   color: #e51937;
   border-bottom: 2px solid;
   border-radius: 2px;
-  transition: color .2s;
+  transition: color 0.2s;
 }
 
 .header__menu {
@@ -113,7 +113,7 @@ width и height для блока, а не его содержимого, */
   margin-bottom: 19px;
   display: flex;
   flex-wrap: wrap;
-  font-family: Montserrat sans-serif;
+  font-family: 'Montserrat';
   justify-content: space-between;
   width: 59%;
 }
@@ -213,12 +213,12 @@ width и height для блока, а не его содержимого, */
   padding-left: 7px;
   align-items: center;
   text-decoration: none;
-  font-size: .86rem;
+  font-size: 0.86rem;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
   color: #000;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, .4);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* Параметры кнопки */
@@ -287,9 +287,11 @@ width и height для блока, а не его содержимого, */
   .header {
     margin: 24px 33px 85px 6.32px;
   }
+
   .header__nav-link {
     display: none;
   }
+
   .header__menu {
     width: 36px;
   }
@@ -298,6 +300,7 @@ width и height для блока, а не его содержимого, */
     width: 35.23px;
     height: 22.02px;
   }
+
   .main__img-background {
     width: 100%;
     margin-top: 96px;
@@ -308,6 +311,7 @@ width и height для блока, а не его содержимого, */
     margin-top: 88px;
     width: 94%;
   }
+
   .main__wrap {
     width: 100%;
   }
@@ -319,6 +323,7 @@ width и height для блока, а не его содержимого, */
     flex-wrap: wrap;
     margin-bottom: 41px;
   }
+
   .main__inner-road {
     padding-left: 0;
   }
@@ -358,11 +363,13 @@ width и height для блока, а не его содержимого, */
   .testdrive__wrapper {
     width: 160px;
   }
+
   .main__img-testdrive {
     fill: #e51937;
     height: 30.37px;
     width: 30.37px;
   }
+
   .main__link {
     font-size: 16px;
     line-height: 20px;
@@ -391,6 +398,7 @@ width и height для блока, а не его содержимого, */
   .main__h1 {
     font-size: 75px;
   }
+
   .testdrive__wrapper {
     margin-bottom: 30px;
   }
@@ -415,6 +423,7 @@ width и height для блока, а не его содержимого, */
   .header__nav-link {
     display: none;
   }
+
   .header__menu-burger {
     width: 24px;
     height: 15px;
@@ -423,11 +432,13 @@ width и height для блока, а не его содержимого, */
   .main {
     margin-top: 7px;
   }
+
   .main__h1 {
     font-size: 50px;
     line-height: 57px;
     margin-top: 20px;
   }
+
   .main__span {
     margin-bottom: 45px;
     font-size: 10px;
@@ -435,6 +446,7 @@ width и height для блока, а не его содержимого, */
   .main__img-background {
     margin-top: 106px;
   }
+
   .main__img-tesla {
     margin: 0;
     width: 100%;
@@ -443,10 +455,12 @@ width и height для блока, а не его содержимого, */
   .main__title {
     margin-bottom: 21px;
   }
+
   .main__inner {
     width: 80%;
     margin-bottom: 38px;
   }
+
   .main__img-speed {
     margin-top: 0;
     width: 40.14px;
@@ -456,6 +470,7 @@ width и height для блока, а не его содержимого, */
   .main__inner-road {
     padding-left: 0;
   }
+
   .main__img-road_dasktop {
     margin: 5px 9px 0 0;
     width: 34px;
@@ -483,6 +498,7 @@ width и height для блока, а не его содержимого, */
   .main__div-testdrive {
     width: 85%;
   }
+
   .main__img-testdrive {
     fill: #e51937;
     height: 24.37px;
@@ -497,6 +513,7 @@ width и height для блока, а не его содержимого, */
     margin: 0 auto;
     width: 47%;
   }
+
   .main__button {
     width: 52%;
     line-height: 36px;
@@ -504,6 +521,7 @@ width и height для блока, а не его содержимого, */
     background: #e51937;
     color: #fff;
   }
+
   .main__vector {
     margin-top: 22px;
   }
