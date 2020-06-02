@@ -113,7 +113,6 @@ width и height для блока, а не его содержимого, */
   margin-bottom: 19px;
   display: flex;
   flex-wrap: wrap;
-  font-family: 'Montserrat';
   justify-content: space-between;
   width: 59%;
 }
@@ -420,6 +419,7 @@ width и height для блока, а не его содержимого, */
     width: 138px;
     height: 42px;
   }
+  
   .header__nav-link {
     display: none;
   }
@@ -467,6 +467,7 @@ width и height для блока, а не его содержимого, */
     height: 29.7px;
     margin-right: 13px;
   }
+
   .main__inner-road {
     padding-left: 0;
   }
@@ -495,6 +496,7 @@ width и height для блока, а не его содержимого, */
     font-weight: 400;
     font-size: 10px;
   }
+
   .main__div-testdrive {
     width: 85%;
   }
@@ -509,6 +511,7 @@ width и height для блока, а не его содержимого, */
     line-height: 20px;
     color: #e51937;
   }
+
   .testdrive__wrapper {
     margin: 0 auto;
     width: 47%;
@@ -532,6 +535,7 @@ width и height для блока, а не его содержимого, */
     margin: 0;
     max-width: 232px;
   }
+
   .main__wrap {
     display: none;
   }
