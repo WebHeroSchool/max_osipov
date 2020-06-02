@@ -262,7 +262,7 @@ width и height для блока, а не его содержимого, */
   .main__wrap {
     width: 90%;
   }
-
+}
 @media (max-width: 768px) {
   .body {
     margin: 0;
