@@ -414,7 +414,8 @@ width и height для блока, а не его содержимого, */
   .main__img-road_dasktop {
     margin: 5px 9px 0 0;
     width: 34px;
-    height: 53px;    }
+    height: 53px;
+  }
 
   .main__text-big {
     font-size: 27px;
@@ -523,6 +524,7 @@ width и height для блока, а не его содержимого, */
   .main__h1 {
     font-size: 40px;
   }
+
   .main__inner {
     width: 80%;
     margin-bottom: 38px;
@@ -581,8 +583,8 @@ width и height для блока, а не его содержимого, */
     width: 47%;
     font-size: 10px;
   }
-    .vector {
-      padding: 6px;
-      border-width: 0 2px 2px 0;
-    }
+  .vector {
+    padding: 6px;
+    border-width: 0 2px 2px 0;
+  }
 }
