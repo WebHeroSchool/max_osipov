@@ -395,67 +395,67 @@ width и height для блока, а не его содержимого, */
     font-size: 75px;
   }
 
-    .main__inner {
-      width: 80%;
-      margin-bottom: 38px;
-    }
+  .main__inner {
+    width: 80%;
+    margin-bottom: 38px;
+  }
 
-    .main__img-speed {
-      margin-top: 0;
-      width: 40.14px;
-      height: 29.7px;
-      margin-right: 13px;
-    }
+  .main__img-speed {
+    margin-top: 0;
+    width: 40.14px;
+    height: 29.7px;
+    margin-right: 13px;
+  }
 
-    .main__inner-road {
-      padding-left: 0;
-    }
+  .main__inner-road {
+    padding-left: 0;
+  }
 
-    .main__img-road_dasktop {
-      margin: 5px 9px 0 0;
-      width: 34px;
-      height: 53px;    }
+  .main__img-road_dasktop {
+    margin: 5px 9px 0 0;
+    width: 34px;
+    height: 53px;    }
 
-    .main__text-big {
-      font-size: 27px;
-      line-height: 33px;
-    }
+  .main__text-big {
+    font-size: 27px;
+    line-height: 33px;
+  }
 
-    .main__text-norm {
-      font-size: 15px;
-      line-height: 23px;
-      padding-left: 9px;
-    }
+  .main__text-norm {
+    font-size: 15px;
+    line-height: 23px;
+    padding-left: 9px;
+  }
 
-    .main__text-small {
-      margin: 0;
-      font-weight: 400;
-      font-size: 10px;
-    }
+  .main__text-small {
+    margin: 0;
+    font-weight: 400;
+    font-size: 10px;
+  }
 
-    .main__div-testdrive {
-      width: 70%;
-    }
+  .main__div-testdrive {
+    width: 70%;
+  }
 
-    .main__img-testdrive {
-      width: 19px;
-    }
+  .main__img-testdrive {
+    width: 19px;
+  }
 
-    .main__link {
-      font-size: 10px;
-      line-height: 20px;
-    }
+  .main__link {
+    font-size: 10px;
+    line-height: 20px;
+  }
 
-    .testdrive__wrapper {
-      margin: 0 auto;
-      width: 47%;
-    }
+  .testdrive__wrapper {
+    margin: 0 auto;
+    width: 47%;
+  }
 
-    .main__button {
-      width: 44%;
-      line-height: 36px;
-      font-size: 10px;
-    }
+  .main__button {
+    width: 44%;
+    line-height: 36px;
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 375px) {
