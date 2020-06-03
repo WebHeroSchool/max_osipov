@@ -24,7 +24,6 @@ width и height для блока, а не его содержимого, */
 
 .header__logo {
   width: 166px;
-  height: 51px;
 }
 
 .header__nav {
@@ -197,7 +196,7 @@ width и height для блока, а не его содержимого, */
 .testdrive__wrapper {
   display: flex;
   align-items: center;
-  width: 40%;
+  width: 122px;
   justify-content: flex-start;
 }
 
@@ -338,8 +337,6 @@ width и height для блока, а не его содержимого, */
     margin: 28px 6px 0 0;
     width: 59px;
     height: 86px;
-    grid-column: 1;
-    grid-row: 1/3;
   }
 
   .main__text-big {
@@ -388,19 +385,77 @@ width и height для блока, а не его содержимого, */
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 585px) {
   .body {
     margin: 0;
-    max-width: 560px;
+    max-width: 585px;
   }
 
   .main__h1 {
     font-size: 75px;
   }
 
-  .testdrive__wrapper {
-    margin-bottom: 30px;
-  }
+    .main__inner {
+      width: 80%;
+      margin-bottom: 38px;
+    }
+
+    .main__img-speed {
+      margin-top: 0;
+      width: 40.14px;
+      height: 29.7px;
+      margin-right: 13px;
+    }
+
+    .main__inner-road {
+      padding-left: 0;
+    }
+
+    .main__img-road_dasktop {
+      margin: 5px 9px 0 0;
+      width: 34px;
+      height: 53px;    }
+
+    .main__text-big {
+      font-size: 27px;
+      line-height: 33px;
+    }
+
+    .main__text-norm {
+      font-size: 15px;
+      line-height: 23px;
+      padding-left: 9px;
+    }
+
+    .main__text-small {
+      margin: 0;
+      font-weight: 400;
+      font-size: 10px;
+    }
+
+    .main__div-testdrive {
+      width: 70%;
+    }
+
+    .main__img-testdrive {
+      width: 19px;
+    }
+
+    .main__link {
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+    .testdrive__wrapper {
+      margin: 0 auto;
+      width: 47%;
+    }
+
+    .main__button {
+      width: 44%;
+      line-height: 36px;
+      font-size: 10px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -413,6 +468,7 @@ width и height для блока, а не его содержимого, */
     margin: 0 auto;
     width: 100%;
     align-items: center;
+    margin-bottom: 7px;
   }
 
   .header__logo-img {
@@ -427,10 +483,6 @@ width и height для блока, а не его содержимого, */
   .header__menu-burger {
     width: 24px;
     height: 15px;
-  }
-
-  .main {
-    margin-top: 7px;
   }
 
   .main__h1 {
@@ -457,6 +509,20 @@ width и height для блока, а не его содержимого, */
     margin-bottom: 21px;
   }
 
+  .main__vector {
+    margin-top: 22px;
+  }
+}
+
+@media (max-width: 330px) {
+  .body {
+    margin: 0;
+    max-width: 330px;
+  }
+
+  .main__h1 {
+    font-size: 40px;
+  }
   .main__inner {
     width: 80%;
     margin-bottom: 38px;
@@ -464,9 +530,8 @@ width и height для блока, а не его содержимого, */
 
   .main__img-speed {
     margin-top: 0;
-    width: 40.14px;
-    height: 29.7px;
-    margin-right: 13px;
+    width: 25px;
+    margin-right: 5px;
   }
 
   .main__inner-road {
@@ -474,28 +539,25 @@ width и height для блока, а не его содержимого, */
   }
 
   .main__img-road_dasktop {
-    margin: 5px 9px 0 0;
+    margin: 0;
     width: 34px;
-    height: 53px;
-    grid-column: 1;
-    grid-row: 1/3;
+    height: 35px;
   }
 
   .main__text-big {
-    font-size: 27px;
-    line-height: 33px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .main__text-norm {
-    font-size: 15px;
+    font-size: 10px;
     line-height: 23px;
-    padding-left: 9px;
+    padding-left: 3px;
   }
 
   .main__text-small {
     margin: 0;
-    font-weight: 400;
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .main__div-testdrive {
@@ -503,15 +565,11 @@ width и height для блока, а не его содержимого, */
   }
 
   .main__img-testdrive {
-    fill: #e51937;
-    height: 24.37px;
-    width: 25.37px;
+    width: 17px;
   }
 
   .main__link {
-    font-size: 13px;
-    line-height: 20px;
-    color: #e51937;
+    font-size: 10px;
   }
 
   .testdrive__wrapper {
@@ -520,25 +578,11 @@ width и height для блока, а не его содержимого, */
   }
 
   .main__button {
-    width: 52%;
-    line-height: 36px;
-    font-size: 13px;
-    background: #e51937;
-    color: #fff;
+    width: 47%;
+    font-size: 10px;
   }
-
-  .main__vector {
-    margin-top: 22px;
-  }
-}
-
-@media (max-width: 232px) {
-  .body {
-    margin: 0;
-    max-width: 232px;
-  }
-
-  .main__wrap {
-    display: none;
-  }
+    .vector {
+      padding: 6px;
+      border-width: 0 2px 2px 0;
+    }
 }
