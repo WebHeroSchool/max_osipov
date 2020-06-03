@@ -1,0 +1,591 @@
+
+/* Задаем основные параметры страници */
+.body {
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 1440px;
+}
+
+/* box-sizing позволяет задавать свойства
+width и height для блока, а не его содержимого, */
+* {
+  box-sizing: border-box;
+}
+
+/* Основные пораметры для header */
+.header {
+  margin: 24px 60px 62px 37px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.header__logo {
+  width: 166px;
+}
+
+.header__nav {
+  margin-left: 46px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 40%;
+}
+
+.header__nav-link {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  line-height: 32px;
+}
+
+/* меняем поведение ссылки при наведении */
+.header__nav-link:hover {
+  color: #e51937;
+  border-bottom: 2px solid;
+  border-radius: 2px;
+  transition: color 0.2s;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 204px;
+}
+
+.header__menu-burger {
+  fill: #e51937;
+  width: 24px;
+  height: 15px;
+}
+
+.header__menu-burger:hover {
+  cursor: pointer;
+}
+
+/* Задаем расположение background по проекту */
+.main {
+  position: relative;
+}
+
+.main__img-background {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Задаем размеры и расположение заголовка */
+.main__title {
+  margin-bottom: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__h1 {
+  margin: 0 auto;
+  font-size: 90px;
+  line-height: 100px;
+}
+
+.main__span {
+  margin-bottom: 28px;
+  font-weight: 500;
+  font-size: 14.7px;
+  line-height: 14px;
+}
+
+/* Задаем расположение изображения в main */
+.main__img-tesla {
+  margin-right: 74px;
+  width: 67%;
+  z-index: 2;
+}
+
+/* Создаем блок для размещения элементов под изображением */
+.main__wrap {
+  margin: 0 auto;
+  margin-bottom: 19px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 59%;
+}
+
+/* Блок с параметрами */
+.main__inner {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+/* Блок  Grid */
+.main__inner-speed {
+  display: grid;
+}
+
+.main__inner-road {
+  display: grid;
+  padding-left: 26px;
+}
+
+/* Помещаем картинку в Grid */
+.main__img-speed {
+  margin-right: 7px;
+  width: 50px;
+  height: 35.5px;
+  grid-column: 1;
+  grid-row: 1/3;
+  align-self: center;
+}
+
+/* Помещаем большой текст в Grid */
+.main__text-big {
+  margin: 0;
+  font-size: 2rem;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+}
+
+/* Помещаем средний текст в Grid */
+.main__text-norm {
+  margin: 0;
+  font-size: 20px;
+  grid-column: 3;
+  grid-row: 1;
+  align-self: end;
+  padding-left: 6px;
+}
+
+/* Помещаем маленький текст в Grid */
+.main__text-small {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  flex-direction: row;
+  grid-column: 2/4;
+  grid-row: 2;
+}
+
+/* Помещаем картинку в Grid */
+.main__img-road_ipad {
+  display: none;
+}
+
+.main__img-road_dasktop {
+  margin: 13px 6px 0 0;
+  width: 42px;
+  height: 59px;
+  grid-column: 1;
+  grid-row: 1/3;
+}
+
+/* Задаем переметры для ссылки тестдрайв */
+.main__div-testdrive {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 43%;
+}
+
+.testdrive__wrapper {
+  display: flex;
+  align-items: center;
+  width: 122px;
+  justify-content: flex-start;
+}
+
+.main__img-testdrive {
+  fill: #000;
+  height: 22px;
+  width: 22px;
+}
+
+.main__link {
+  display: flex;
+  padding-left: 7px;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.86rem;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Параметры кнопки */
+.main__button {
+  width: 44%;
+  font-size: 13px;
+  line-height: 36px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #e51937;
+  background: transparent;
+  border: 2px solid #e51937;
+  text-align: center;
+  transition-duration: 0.4s;
+}
+
+.main__button:hover {
+  background: #e51937;
+  color: #000;
+}
+
+/* блок со стрелкой вниз */
+.main__vector {
+  text-align: center;
+}
+
+/* Стрелка вниз */
+.vector {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  border-color: #e51937;
+  display: inline-block;
+  padding: 10px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+@media (max-width: 1024px) {
+  .body {
+    margin: 0;
+    max-width: 1024px;
+  }
+
+  .header__nav-link {
+    display: none;
+  }
+
+  .header__menu {
+    width: 30px;
+  }
+
+  .main__wrap {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .body {
+    margin: 0;
+    max-width: 768px;
+  }
+
+  .header {
+    margin: 24px 33px 85px 6.32px;
+  }
+
+  .header__nav-link {
+    display: none;
+  }
+
+  .header__menu {
+    width: 36px;
+  }
+
+  .header__menu-burger {
+    width: 35.23px;
+    height: 22.02px;
+  }
+
+  .main__img-background {
+    width: 100%;
+    margin-top: 96px;
+  }
+
+  .main__img-tesla {
+    margin-left: 75px;
+    margin-top: 88px;
+    width: 94%;
+  }
+
+  .main__wrap {
+    width: 100%;
+  }
+
+  .main__inner {
+    margin: 0 auto;
+    width: 70%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 41px;
+  }
+
+  .main__inner-road {
+    padding-left: 0;
+  }
+
+  .main__img-speed {
+    margin-top: 4px;
+    width: 65.92px;
+    height: 50.16px;
+    margin-right: 20px;
+  }
+
+  .main__img-road_dasktop {
+    margin: 28px 6px 0 0;
+    width: 59px;
+    height: 86px;
+  }
+
+  .main__text-big {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .main__text-norm {
+    font-size: 20px;
+    line-height: 49px;
+    padding-left: 9px;
+  }
+
+  .main__div-testdrive {
+    margin: 0 auto;
+    width: 70%;
+    flex-wrap: wrap;
+  }
+
+  .testdrive__wrapper {
+    width: 160px;
+  }
+
+  .main__img-testdrive {
+    fill: #e51937;
+    height: 30.37px;
+    width: 30.37px;
+  }
+
+  .main__link {
+    font-size: 16px;
+    line-height: 20px;
+    color: #e51937;
+  }
+
+  .main__button {
+    width: 220.84px;
+    line-height: 51px;
+    font-size: 16px;
+    background: #e51937;
+    color: #fff;
+  }
+
+  .main__vector {
+    margin-top: 52px;
+  }
+}
+
+@media (max-width: 585px) {
+  .body {
+    margin: 0;
+    max-width: 585px;
+  }
+
+  .main__h1 {
+    font-size: 75px;
+  }
+
+  .main__inner {
+    width: 80%;
+    margin-bottom: 38px;
+  }
+
+  .main__img-speed {
+    margin-top: 0;
+    width: 40.14px;
+    height: 29.7px;
+    margin-right: 13px;
+  }
+
+  .main__inner-road {
+    padding-left: 0;
+  }
+
+  .main__img-road_dasktop {
+    margin: 5px 9px 0 0;
+    width: 34px;
+    height: 53px;
+  }
+
+  .main__text-big {
+    font-size: 27px;
+    line-height: 33px;
+  }
+
+  .main__text-norm {
+    font-size: 15px;
+    line-height: 23px;
+    padding-left: 9px;
+  }
+
+  .main__text-small {
+    margin: 0;
+    font-weight: 400;
+    font-size: 10px;
+  }
+
+  .main__div-testdrive {
+    width: 70%;
+  }
+
+  .main__img-testdrive {
+    width: 19px;
+  }
+
+  .main__link {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .testdrive__wrapper {
+    margin: 0 auto;
+    width: 47%;
+  }
+
+  .main__button {
+    width: 44%;
+    line-height: 36px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .body {
+    margin: 0;
+    max-width: 375px;
+  }
+
+  .header {
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 7px;
+  }
+
+  .header__logo-img {
+    width: 138px;
+    height: 42px;
+  }
+
+  .header__nav-link {
+    display: none;
+  }
+
+  .header__menu-burger {
+    width: 24px;
+    height: 15px;
+  }
+
+  .main__h1 {
+    font-size: 50px;
+    line-height: 57px;
+    margin-top: 20px;
+  }
+
+  .main__span {
+    margin-bottom: 45px;
+    font-size: 10px;
+  }
+
+  .main__img-background {
+    margin-top: 106px;
+  }
+
+  .main__img-tesla {
+    margin: 0;
+    width: 100%;
+  }
+
+  .main__title {
+    margin-bottom: 21px;
+  }
+
+  .main__vector {
+    margin-top: 22px;
+  }
+}
+
+@media (max-width: 330px) {
+  .body {
+    margin: 0;
+    max-width: 330px;
+  }
+
+  .main__h1 {
+    font-size: 40px;
+  }
+
+  .main__inner {
+    width: 80%;
+    margin-bottom: 38px;
+  }
+
+  .main__img-speed {
+    margin-top: 0;
+    width: 25px;
+    margin-right: 5px;
+  }
+
+  .main__inner-road {
+    padding-left: 0;
+  }
+
+  .main__img-road_dasktop {
+    margin: 0;
+    width: 34px;
+    height: 35px;
+  }
+
+  .main__text-big {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .main__text-norm {
+    font-size: 10px;
+    line-height: 23px;
+    padding-left: 3px;
+  }
+
+  .main__text-small {
+    margin: 0;
+    font-size: 8px;
+  }
+
+  .main__div-testdrive {
+    width: 85%;
+  }
+
+  .main__img-testdrive {
+    width: 17px;
+  }
+
+  .main__link {
+    font-size: 10px;
+  }
+
+  .testdrive__wrapper {
+    margin: 0 auto;
+    width: 47%;
+  }
+
+  .main__button {
+    width: 47%;
+    font-size: 10px;
+  }
+
+  .vector {
+    padding: 6px;
+    border-width: 0 2px 2px 0;
+  }
+}
