@@ -402,7 +402,6 @@ width и height для блока, а не его содержимого, */
   color: #fff;
   border: 2px solid #fff;
   width: 46%;
-  }
 }
 
 .main__button:hover {
@@ -616,7 +615,7 @@ width и height для блока, а не его содержимого, */
     font-size: 10px;
   }
 
-  ..section__safety {
+  .section__safety {
     margin-bottom: 50px;
   }
 
