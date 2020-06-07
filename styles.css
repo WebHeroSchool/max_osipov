@@ -563,6 +563,7 @@ width и height для блока, а не его содержимого, */
   .main__wrap {
     width: 90%;
   }
+  
   .section__redbar-h3 {
     font-size: 25px;
   }
