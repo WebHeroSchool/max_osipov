@@ -234,6 +234,7 @@ width и height для блока, а не его содержимого, */
   border: 2px solid #e51937;
   width: 44%;
 }
+
 .button {
   font-size: 13px;
   line-height: 36px;
@@ -302,6 +303,7 @@ width и height для блока, а не его содержимого, */
 .section__redbar-text {
   padding-top: 52px;
 }
+
 .section__redbar-h3 {
   margin: 0;
   margin-bottom: 15px;
@@ -385,6 +387,7 @@ width и height для блока, а не его содержимого, */
   width: 78%;
   margin-left: 50px;
 }
+
 .section__order-img {
   fill: none;
   height: 22px;
@@ -402,11 +405,6 @@ width и height для блока, а не его содержимого, */
   color: #fff;
   border: 2px solid #fff;
   width: 46%;
-}
-
-.main__button:hover {
-  background: #e51937;
-  color: #000;
 }
 
 .section__redbar2 {
@@ -510,7 +508,7 @@ width и height для блока, а не его содержимого, */
   font-size: 200px;
   color: #e51937;
   opacity: 0.1;
-  z-index: 1
+  z-index: 1;
 }
 
 .footer {
