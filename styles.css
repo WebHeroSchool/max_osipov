@@ -578,7 +578,7 @@ width и height для блока, а не его содержимого, */
   }
 
   .section__img {
-    width: 60%
+    width: 60%;
   }
 
   .section__redbar,
