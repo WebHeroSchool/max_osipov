@@ -269,6 +269,7 @@ width и height для блока, а не его содержимого, */
 .section {
   display: flex;
   flex-wrap: wrap;
+  height: 900px;
 }
 
 .section__h2 {
@@ -284,59 +285,59 @@ width и height для блока, а не его содержимого, */
   display: flex;
   position: relative;
   width: 69.5%;
-  height: 900px;
   overflow: hidden;
 }
 
 .section__img-cockpit {
   position: absolute;
   z-index: 1;
+  height: 100%;
   margin-top: 56px;
 }
 
 .section__redbar {
+  display: flex;
+  flex-flow: wrap;
+  align-content: space-between;
   width: 30.5%;
+  height: 100%;
   color: #fff;
   background: #e51937;
 }
 
 .section__redbar-text {
+  margin: 0 auto;
   padding-top: 52px;
+  width: 81%;
+  height: 33%;
 }
 
 .section__redbar-h3 {
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 15px;
   font-size: 30px;
   font-weight: 500;
-  width: 92%;
-  text-align: center;
 }
 
 .section__text {
-  margin: 0 auto;
-  margin-bottom: 55px;
   font-size: 15px;
   line-height: 18px;
   font-weight: 500;
-  width: 75%;
 }
 
 .section__parameters {
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  width: 52%;
-  margin-left: 50px;
-  margin-bottom: 168px;
+  width: 80%;
+  height: 33%;
+  align-content: space-between;
 }
 
 .section__parameter {
   display: grid;
-  margin-bottom: 35px;
-}
-
-.section__parameter:last-child {
-  margin-bottom: 0;
+  justify-content: flex-start;
+  width: 66%;
 }
 
 /* Помещаем картинку в Grid */
@@ -381,11 +382,12 @@ width и height для блока, а не его содержимого, */
 }
 
 .section__order {
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 78%;
-  margin-left: 50px;
+  width: 80%;
+  padding-bottom: 62px;
 }
 
 .section__order-img {
@@ -408,6 +410,9 @@ width и height для блока, а не его содержимого, */
 }
 
 .section__redbar2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
   width: 30.5%;
   color: #fff;
   background: #e51937;
@@ -415,18 +420,19 @@ width и height для блока, а не его содержимого, */
 }
 
 .section__safety {
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
-  margin-bottom: 98px;
+  width: 80%;
+  height: 30%;
 }
 
 .section__safety-item {
-  margin: 8px 0 0 56px;
+  padding-top: 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 74%;
+  width: 90%;
 }
 
 .section__safety_text {
@@ -455,7 +461,7 @@ width и height для блока, а не его содержимого, */
 .section__security {
   margin: 0 auto;
   width: 70%;
-  margin-bottom: 52px;
+  height: 10%;
 }
 
 .security__wrap {
@@ -488,14 +494,16 @@ width и height для блока, а не его содержимого, */
 .section__auto {
   position: absolute;
   width: 105%;
-  height: 900px;
+  height: 100%;
   right: 46px;
   z-index: 2;
 }
 
 .img-frame {
+  flex-wrap: wrap;
   overflow: visible;
   justify-content: flex-end;
+  align-content: space-between;
 }
 
 .section__img-auto {
@@ -513,9 +521,9 @@ width и height для блока, а не его содержимого, */
 }
 
 .footer {
-  position: absolute;
-  top: 850px;
-  right: 17px;
+  width: 100%;
+  text-align: end;
+  padding-right: 10px;
 }
 
 .footer__text {
@@ -542,8 +550,8 @@ width и height для блока, а не его содержимого, */
     font-size: 150px;
   }
 
-  .section__img-auto {
-    width: 100%;
+  .section__redbar-h3 {
+    font-size: 27px;
   }
 }
 
@@ -565,18 +573,29 @@ width и height для блока, а не его содержимого, */
     width: 90%;
   }
 
+  .section {
+    height: 768px;
+  }
+
+  .section__img {
+    width: 60%
+  }
+
+  .section__redbar,
+  .section__redbar2 {
+    width: 40%;
+  }
+
   .section__redbar-h3 {
-    font-size: 25px;
+    font-size: 23px;
+  }
+
+  .section__redbar-text {
+    padding-top: 25px;
   }
 
   .section__text {
     font-size: 13px;
-    width: 85%;
-  }
-
-  .section__parameters {
-    width: 60%;
-    margin-left: 20px;
   }
 
   .section__parameter1-display {
@@ -620,7 +639,7 @@ width и height для блока, а не его содержимого, */
   }
 
   .section__safety-item {
-    margin-left: 20px;
+    width: 100%;
   }
 
   .section__safety_text {
@@ -768,6 +787,10 @@ width и height для блока, а не его содержимого, */
     margin-top: 52px;
   }
 
+  .section {
+    height: 100%;
+  }
+
   .section__img {
     width: 100%;
     height: 553px;
@@ -788,30 +811,35 @@ width и height для блока, а не его содержимого, */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 55px;
   }
 
   .section__redbar-text {
-    width: 51%;
+    width: 50%;
+    padding: 0;
   }
 
   .section__parameters {
-    margin: 51px 0 78px 62px;
-    width: 30%;
+    margin: 0;
+    padding-top: 0;
+    width: 47%;
   }
 
   .section__redbar-h3 {
     font-size: 30px;
     margin-bottom: 30px;
+    width: 89%;
   }
 
   .section__text {
-    margin: 0;
     font-size: 15px;
-    padding-left: 35px;
+    width: 89%;
   }
 
   .section__parameter {
-    margin-bottom: 25px;
+    margin: 0 auto;
+    margin-bottom: 21px;
+    width: 83%;
   }
 
   .section__parameter1-display {
@@ -831,8 +859,8 @@ width и height для блока, а не его содержимого, */
 
   .section__order {
     width: 100%;
-    margin-bottom: 60px;
     justify-content: space-around;
+    padding: 37px 0 52px 0;
   }
 
   .section__link {
@@ -857,7 +885,6 @@ width и height для блока, а не его содержимого, */
   .section__auto {
     width: 100%;
     right: 18px;
-    height: 538px;
   }
 
   .section__img-auto {
@@ -874,17 +901,17 @@ width и height для блока, а не его содержимого, */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 62px;
   }
 
   .section__safety {
-    padding-top: 52px;
-    width: 49%;
-    margin-bottom: 65px;
+    margin: 0;
+    width: 47%;
+    margin-bottom: 20px;
   }
 
   .section__safety-item {
-    margin-left: 28px;
-    width: 85%;
+    width: 89%;
   }
 
   .section__safety_text {
@@ -984,16 +1011,19 @@ width и height для блока, а не его содержимого, */
     height: 420px;
   }
 
+  .section__redbar-text {
+    width: 90%;
+    padding-top: 10px;
+  }
+
+  .section__redbar-h3 {
+    width: 100%;
+  }
+
   .section__text {
     margin: 0;
     font-size: 15px;
-    padding-left: 15px;
     margin-bottom: 24px;
-  }
-
-  .section__redbar-text {
-    width: 100%;
-    padding-top: 10px;
   }
 
   .section__h2,
